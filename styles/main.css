@@ -309,6 +309,7 @@
     margin: 0;
 }
 .card__buy-btn-counter {
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
