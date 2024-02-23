@@ -61,7 +61,7 @@ export class CardOverview {
     }
 
     _addItemToBasket() {
-        this.elementAddToBasket(this._cardData.articul, this._cardBasketBtnCounterData);
+        this._cardBasketBtnCounterData.text(this.elementAddToBasket(this._cardData.articul));
         this._cardBasketBtn.addClass('card__buy-btn_hide');
         this._cardBasketBtnContainer.removeClass('card__buy-btn_hide');
     }
@@ -70,8 +70,7 @@ export class CardOverview {
             this._cardBasketBtn.removeClass('card__buy-btn_hide');
             this._cardBasketBtnContainer.addClass('card__buy-btn_hide');
         }
-        this.elementRemoveFromBasket(this._cardData.articul, this._cardBasketBtnCounterData);
-
+        this._cardBasketBtnCounterData.text(this.elementRemoveFromBasket(this._cardData.articul))
     }
 
 
