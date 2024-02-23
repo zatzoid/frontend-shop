@@ -1,0 +1,13 @@
+@import url(../../css/index.css);
+@import url(../../css/sections/header.css);
+@import url(../../css/sections/heading.css);
+@import url(../../css/sections/about-block.css);
+@import url(../../css/sections/advantages.css);
+@import url(../../css/sections/popular.css);
+@import url(../../css/sections/card.css);
+@import url(../../css/sections/news-block.css);
+@import url(../../css/sections/footer.css);
+
+.main {
+    margin: 20px;
+}

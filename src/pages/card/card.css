@@ -1,0 +1,11 @@
+@import url(../../css/index.css);
+@import url(../../css/sections/header.css);
+@import url(../../css/sections/heading.css);
+@import url(../../css/sections/footer.css);
+@import url(../../css/sections/watched.css);
+@import url(../../css/sections/card-overview.css);
+@import url(../../css/sections/card-description.css);
+@import url(../../css/sections/card.css);
+.main{
+    margin: 20px;
+}

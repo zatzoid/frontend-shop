@@ -1,0 +1,29 @@
+.card-description {
+    max-width: var(--max-width);
+    margin: auto;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.card-description__heading {
+    color: var(--col-main);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.card-description__stats {
+    display: flex;
+    gap: 5px;
+}
+
+.card-description__stats-data {
+    background-color: var(--col-bg-blue);
+    padding: 4px 8px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    color: var(--col-dark);
+}
+
+.card-description__text {
+    color: var(--col-dark);
+}

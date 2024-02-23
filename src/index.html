@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paladium</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+
+            <nav class="header-top">
+                <a class="header-top__link link-def" href="https://yandex.ru/maps/?text=Москва, ул. Льва Толстого, 16"
+                    target="_blank">
+                    Улица Пушкина
+                </a>
+                <div class="haeder-top__links">
+                    <a class="header-top__link link-def" href="#">
+                        Доставка и Оплата
+                    </a>
+                    <a class="header-top__link link-def" href="#">
+                        Обучение
+                    </a>
+                    <a class="header-top__link link-def" href="#">
+                        О компании
+                    </a>
+                    <a class="header-top__link link-def" href="#">
+                        Где купить
+                    </a>
+                    <a class="header-top__link link-def" href="#">
+                        Контакты
+                    </a>
+                </div>
+            </nav>
+            <button class="header-top__open-btn">
+                <label class="header-top__open-btn-cb">
+                    <input class="header-top__open-btn-cb-input" type="checkbox" name="openMenu">
+
+                    <div class="header-top__open-btn-cb-lines">
+                        <span class="header-top__open-btn-cb-line"></span>
+                        <span class="header-top__open-btn-cb-line"></span>
+                        <span class="header-top__open-btn-cb-line"></span>
+                    </div>
+                    <p class="header-top__open-btn-cb-text">Меню</p>
+                </label>
+
+            </button>
+        </div>
+        <div class="header-wrapper">
+            <div class="header-bottom">
+                <a class="header-bottom__logo-link" href="/">
+                    <img class="header-bottom__logo" src="<%=require('/src/assets/Logo-blue.png')%>" alt="paladium">
+                </a>
+                <nav class="header-bottom-nav">
+                    <a class="header-bottom__catalog btn-radius header-bottom__link" href="/catalog.html">
+                        <p class="header-bottom__catalog-data  ">Каталог</p>
+                    </a>
+                    <div class="header-bottom__search header-bottom__link ">
+                        <input class="header-bottom__search-input btn-radius " maxlength="40" autocomplete="off"
+                            placeholder="Поиск по ассортименту" type="text" name="search">
+
+                        <button class="header-bottom__search-btn-open">
+                            <p class="header-bottom__link-descript ">Поиск</p>
+                        </button>
+                        <div class="header-bottom__search-finded">
+                            <div class="header-bottom__search-finded-result">
+                                <button class="header-bottom__search-finded-btn-close">закрыть поиск </button>
+
+                                <p class="header-bottom__search-finded-heading">Товары</p>
+                                <ul class="header-bottom__search-finded-result-items">
+
+                                </ul>
+                                <p class="header-bottom__search-finded-result-heading">Категории</p>
+                                <ul class="header-bottom__search-finded-result-category">
+
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <a class="header-bottom__telephone btn-radius header-bottom__link" href="tel:+1488228322"
+                        title="+1488228322">
+                        <p class="header-bottom__link-descript">Позвонить</p>
+                    </a>
+                    <a class="header-bottom__basket btn-radius header-bottom__link" href="/basket.html">
+                        <p class="header-bottom__link-descript">Корзина</p>
+                        <p class="header-bottom__basket-count"></p>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="heading">
+            <div class="heading__body">
+                <h1 class="heading__body-head">Сухие смеси
+                    премиум качества</h1>
+            </div>
+            <img class="heading__img" src="<%=require('/src/assets/heading-main.png')%>" alt="heading">
+        </section>
+        <section class="about-block">
+            <h2 class="about-block__heading">О компании</h2>
+            <h3 class="about-block__head">
+                Paladium: качество и доступность современных сухих смесей
+            </h3>
+            <div class="about-block__body">
+                <p class="about-block__body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                    laborum aliquid! Esse, excepturi
+                    voluptatibus nemo repellendus tenetur dolorem beatae saepe quia earum, porro et laborum cupiditate
+                    vel assumenda molestias, sed nesciunt voluptatem nobis sunt ipsa aut! Unde adipisci ex minima hic
+                </p>
+                <a class=" about-block__body-link btn-white btn-radius" href="#"> О компании</a>
+            </div>
+
+        </section>
+        <section class="advantages">
+            <h2 class="advantages__heading">Почему выбирают нас</h2>
+            <ul class="advantages__grid">
+                <li class="advantages__grid-el">
+                    <p class="advantages__grid-el-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+                        deserunt laboriosam, molestias
+                        quibusdam tempore excepturi dolorum, rem exercitationem aperiam iste sed deleniti?</p>
+                </li>
+                <li class="advantages__grid-el">
+                    <p class="advantages__grid-el-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus, ratione.</p>
+                </li>
+                <li class="advantages__grid-el">
+                    <p class="advantages__grid-el-text">Lorem ipsum dolor sit amet.</p>
+                </li>
+                <li class="advantages__grid-el">
+                    <p class="advantages__grid-el-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                        repellendus temporibus quae exercitationem, cumque quis.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="popular">
+            <h2 class="popular__heading">Каталог</h2>
+            <h3 class="popular__head">Популярные товары</h3>
+            <ul class="popular__grid">
+
+            </ul>
+        </section>
+        <section class="news-block">
+            <div class="news-block__desc">
+                <h2 class="news-block__desc-heading">Новости</h2>
+                <h3 class="news-block-desc__head">Полезные материалы и новости</h3>
+                <div class="news-block-desc__btns">
+                    <button class="news-block__desc-btn news-block__desc-btn_left"></button>
+                    <button class="news-block__desc-btn news-block__desc-btn_right"></button>
+                </div>
+            </div>
+            <ul class="news-block__grid">
+                <li class="news-block__grid-el">
+                    <div class="news-block__grid-el-img">
+                        <img src="<%=require('/src/assets/news-1.png')%>" alt="news"
+                            class="news-block__grid-el-img-data">
+                    </div>
+                    <div class="news-block__grid-el-desc">
+                        <p class="news-block__grid-el-desc-date">12.12.2012</p>
+                        <h4 class="news-block__grid-el-desc-head">Lorem ipsum dolor sit amet.</h4>
+                        <a href="#" class="news-block__grid-el-desc-link link-def">читать</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+
+    </main>
+    <footer class="footer-wrapper">
+        <div class="footer">
+            <div class="footer__logo">
+                <img src="<%=require('/src/assets/logo-white.png')%>" alt="paladium" class="footer__logo-img">
+                <p class="footer__logo-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, ex?
+                </p>
+            </div>
+            <div class="footer__info">
+                <nav class="footer__info-nav">
+                    <a class="footer__info-nav-link link-def" href="#">
+                        Доставка и Оплата
+                    </a>
+                    <a class="footer__info-nav-link link-def" href="#">
+                        Обучение
+                    </a>
+                    <a class="footer__info-nav-link link-def" href="#">
+                        О компании
+                    </a>
+                    <a class="footer__info-nav-link link-def" href="#">
+                        Где купить
+                    </a>
+                    <a class="footer__info-nav-link link-def" href="#">
+                        Контакты
+                    </a>
+                </nav>
+                <ul class="footer__info-contacts">
+                    <li class="footer__info-contacts-el">
+                        <p class="footer__info-contacts-name">Отдел продаж</p>
+                        <a class="footer__info-contacts-phone link-def" href="tel:82281488228">8 (228) 322-228</a>
+
+                    </li>
+                    <li class="footer__info-contacts-el">
+                        <p class="footer__info-contacts-name">Тех. поддержка</p>
+                        <a class="footer__info-contacts-phone link-def" href="tel:82281488228">8 (228) 1488-228</a>
+
+                    </li>
+                    <li class="footer__info-contacts-el">
+                        <p class="footer__info-contacts-name">Центральный офис</p>
+                        <a class="footer__info-contacts-phone link-def" href="tel:82281488228">8 (228) 999-228</a>
+
+                    </li>
+
+                </ul>
+                <div class="footer__info-social">
+                    <form class="footer__info-social-form">
+                        <label class="footer__info-social-form-email">
+                            Получайте новинки, лучшие предложения
+                            и скидки по электронной почте.
+                            <input type="email" placeholder="email"
+                                class="btn-radius footer__info-social-form-email-input">
+                        </label>
+                        <button type="submit"
+                            class="btn-radius btn-blue  footer__info-social-form-submit">Подписаться</button>
+                    </form>
+                    <a class="btn-trans btn-radius footer__info-social-link" href="#" target="_blank"></a>
+                    <a class="btn-trans btn-radius footer__info-social-link" href="#" target="_blank"></a>
+                    <a class="btn-trans btn-radius footer__info-social-link" href="#" target="_blank"></a>
+                </div>
+            </div>
+            <div class="footer__year">
+                <p class="footer__year-date"> 2014-2024 QQQ 'QQQeeewWWW'</p>
+                <a href="#" target="_blank" class="link-def footer__year-link">Политика конфиденциальности</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- <div>
+        <a href="/src/pages/catalog/catalog.html">catalog</a>
+        <a href="/src/pages//card/card.html">card</a>
+    </div> -->
+    <!--  <script src="/src/pages/main/main.js" type="module"></script> -->
+</body>
+
+</html>

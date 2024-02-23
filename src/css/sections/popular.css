@@ -1,0 +1,25 @@
+.popular {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    box-sizing: border-box;
+    padding: 80px 0;
+    overflow: hidden;
+}
+.popular__heading {
+    font-size: 14px;
+    color: var(--col-dark);
+    margin: 0;
+}
+.popular__head {
+    font-size: 45px;
+    color: var(--col-dark);
+    margin: 40px 0;
+}
+.popular__grid {
+    display: flex;
+    
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+}

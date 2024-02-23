@@ -1,0 +1,132 @@
+.heading {
+    max-width: var(--max-width);
+    width: 100%;
+    background-color: #F3F3F3;
+    margin: auto;
+    display: flex;
+    height: 640px;
+    border-radius: var(--section-radius);
+    overflow: hidden;
+}
+
+.heading_bg {
+    background-image: url(/src/assets/heading.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px !important;
+}
+
+.heading_card {
+    background-color: transparent;
+    height: 100px !important;
+    padding: 20px 0;
+    margin: 0 !important;
+}
+
+.heading__body {
+    position: relative;
+    height: 100%;
+
+}
+
+.heading__body_section {
+    width: 100%;
+}
+
+.heading__body-head {
+    position: absolute;
+    margin: 0;
+    bottom: 10%;
+    left: 40px;
+    font-size: 70px;
+    color: var(--col-dark);
+    width: 650px;
+
+}
+
+.heading__body-head_section {
+    width: 100%;
+
+}
+
+.heading__img {
+    margin-left: auto;
+    height: 100%;
+    max-width: 1000px;
+    width: 70%;
+}
+
+.heading__body-path {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.heading__body-path-link {
+    border: 1px solid var(--col-grey);
+    border-radius: 100px;
+    background-color: transparent;
+    color: var(--col-grey);
+    padding: 4px 8px;
+    cursor: pointer;
+    opacity: 0.7;
+    text-decoration: none;
+
+}
+
+.heading__body-path-link:focus,
+.heading__body-path-link:hover {
+    opacity: 0.5;
+}
+
+.heading__body-path-link:active {
+    opacity: 0.3;
+}
+
+.heading__body-path-link_current {
+    color: var(--col-main);
+    opacity: 1;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .heading {
+        height: 460px;
+    }
+
+    .heading__body-head {
+
+        font-size: 55px;
+        width: 408px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .heading {
+        height: 350px;
+        overflow: visible;
+    }
+
+    .heading_section-bg {
+        height: 260px !important;
+    }
+
+    .heading__body-head {
+        z-index: 5;
+        font-size: 40px;
+        width: 70vw;
+    }
+
+    .heading__img {
+        display: none;
+        border-radius: var(--section-radius);
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-top: auto;
+    }
+
+}

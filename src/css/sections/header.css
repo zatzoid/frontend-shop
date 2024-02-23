@@ -1,0 +1,46 @@
+@import url(./header/header-top.css);
+@import url(./header/header-bottom.css);
+
+.header {}
+
+.header-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: var(--col-bg-blue);
+}
+
+.header-wrapper:first-of-type {
+    background-color: var(--col-bg-blue);
+}
+
+.header-wrapper:last-of-type {
+    background-color: var(--col-white);
+}
+
+
+
+
+/* 
+ head bottom
+*/
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+
+
+   
+
+}
+
+@media screen and (max-width: 600px) {
+   
+    .header-wrapper:first-of-type {
+        transform: translateY(30px);
+        z-index: 8;
+    }
+
+    
+}

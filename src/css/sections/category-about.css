@@ -1,0 +1,27 @@
+.category-about {
+    max-width: var(--max-width);
+    margin: auto;
+    border-radius: var(--section-radius);
+    background-color: var(--col-bg-blue);
+    box-sizing: border-box;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.category-about__heading {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+
+}
+.category-about__text {
+    font-size: 16px;
+    margin: 0;
+}
+@media screen and (max-width: 1200px) {
+    .category-about{
+        grid-template-columns: auto;
+    }
+}

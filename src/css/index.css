@@ -1,0 +1,86 @@
+@import url('./fonts/fonts.css');
+@import '../../node_modules/normalizecss/normalize.css';
+
+body {
+    --col-main: #3A5385;
+    --col-main-dark: #2B374E;
+    --col-main-light: #9DA9C2;
+    --col-white: #FFFFFF;
+    --col-bg-blue: #E7EAF2;
+    --col-bg-grey: #F9F9F9;
+    --col-dark: #333333;
+    --col-grey: #969696;
+    --col-red: #FF2121;
+    --max-width: 1400px;
+    --section-radius: 30px;
+    font-family: 'IgraSans', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--col-bg-grey);
+
+
+}
+.btn-clear{
+    background-color: transparent;
+    border: 1px solid var(--col-white);
+    color: var(--col-main);
+    text-decoration: none;  
+}
+
+.btn-white {
+    background-color: var(--col-white);
+    border: 1px solid var(--col-main);
+    color: var(--col-main);
+    text-decoration: none;
+}
+.btn-blue {
+    background-color: var(--col-main);
+    border: 1px solid var(--col-main);
+    color: var(--col-white);
+    text-decoration: none;
+}
+
+.btn-white:focus,
+.btn-white:hover,
+.btn-blue:focus,
+.btn-blue:hover,
+.btn-clear:focus,
+.btn-clear:hover {
+    opacity: 0.7;
+}
+
+.btn-white:active, .btn-blue:active, .btn-clear:active {
+    opacity: 0.5;
+}
+
+.btn-radius {
+    border-radius: 100px;
+    padding: 17.5px 20px;
+    box-sizing: border-box;
+    border: 1px solid;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.btn-radius:focus,
+.btn-radius:hover {
+    opacity: 0.7;
+}
+
+.btn-radius:active {
+    opacity: 0.5;
+}
+
+.link-def {
+    color: var(--col-dark);
+    text-decoration: none;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.link-def:focus,
+.link-def:hover {
+    opacity: 0.7;
+}
+
+.link-def:active {
+    opacity: 0.5;
+}
