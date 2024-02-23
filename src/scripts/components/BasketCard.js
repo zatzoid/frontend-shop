@@ -98,14 +98,20 @@ export class BasketCard {
         this._cardSumm.text(data * this._cardData.prices[0]);
         this._cardCounterData.text(data);
     }
+    _setCardLink(){
+        const currentPath = window.location.href;
+        const isGhPage =  currentPath.includes('github');
+        this._cardHeadingLink.attr('href', `${ isGhPage ? '/frontend-shop': '' }/card.html?item=${this._cardData.articul}`);
+    }
     _setCardValue() {
         this._cardHeading.text(this._cardData.name);
         this._cardPrice.text(`${this._cardData.prices[0]} Р/${this._cardData.value}`);
-        this._cardHeadingLink.attr('href', `/card.html?item=${this._cardData.articul}`);
+       
         this._cardImg.attr('src', defaultImg);
         this._cardImg.attr('alt', this._cardData.name);
         $(this._cardDomMain).attr('data-index', this._cardData.articul)
         this._setCardCounter(this._cardLSdata.count);
+        this._setCardLink()
 
 
     }

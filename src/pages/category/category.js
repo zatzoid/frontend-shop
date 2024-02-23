@@ -8,6 +8,7 @@ import { Basket } from '../../scripts/components/Basket';
 import checkLStimings from '../../scripts/checkLStimings';
 import setHeaderListeners from '../../scripts/header';
 import { setSliderListeners } from '../../scripts/slider';
+import changeLink from '../../scripts/linkChanger';
 
 const currentUrl = window.location.search;
 const decodedQuery = decodeURIComponent(currentUrl.split('=')[1]);
@@ -68,6 +69,14 @@ $(function () {
     watched.putWatchedItems();
     setHeaderListeners();
     setSliderListeners();
+    
+    changeLink('.header-bottom__logo-link');
+    changeLink('.header-bottom__catalog');
+    changeLink('.header-bottom__basket');
+    const headingLinks = $('.heading__body-path-link').toArray();
+    headingLinks.forEach(el => {
+        changeLink(el)
+    });
 
 
 

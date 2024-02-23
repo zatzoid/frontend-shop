@@ -99,7 +99,9 @@ export default class Card {
     }
     _addLinkToCard() {
         /*        const link = this._cardData.name.replace(/ /g, "_"); */
-        this._cardLink.attr('href', `/card.html?item=${this._cardData.articul}`);
+        const currentPath = window.location.href;
+        const isGhPage =  currentPath.includes('github');
+        this._cardLink.attr('href', `${ isGhPage ? '/frontend-shop': '' }/card.html?item=${this._cardData.articul}`);
     }
     _firstRender() {
         let existingList = JSON.parse(localStorage.getItem('basket'));

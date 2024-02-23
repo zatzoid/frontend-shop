@@ -4,6 +4,7 @@ import checkLStimings from '../../scripts/checkLStimings';
 import { Basket } from '../../scripts/components/Basket';
 import { fakeApi } from '../../scripts/fakeAPI';
 import { BasketCard } from '../../scripts/components/BasketCard';
+import changeLink from '../../scripts/linkChanger';
 
 
 
@@ -171,5 +172,13 @@ $(function () {
     checkLStimings(['basket']);
     basket.basketCounter();
     renderBasket();
+    
+    changeLink('.header-bottom__logo-link');
+    changeLink('.header-bottom__catalog');
+    changeLink('.header-bottom__basket');
+    const headingLinks = $('.heading__body-path-link').toArray();
+    headingLinks.forEach(el => {
+        changeLink(el)
+    });
 
 })
