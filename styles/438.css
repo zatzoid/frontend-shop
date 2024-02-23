@@ -727,6 +727,7 @@ open btn
 
 .header-bottom__logo-link {
     position: absolute;
+    z-index: 5;
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
